@@ -1,0 +1,36 @@
+.review-container {
+  width: 100vw;
+
+  gap: 20px;
+  display: flex;
+  height: max-content;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews {
+  width: 80%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+.name-rev {
+  font-size: 20px;
+}
+.riv {
+  height: max-content;
+  padding: 30px;
+  width: 500px;
+  color: aliceblue;
+  background-color: rgba(135, 18, 5, 1);
+}
+.rev-dec {
+  font-size: 12px;
+}
+
+.review-actions {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}

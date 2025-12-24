@@ -1,0 +1,108 @@
+.stats-container {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 60px 80px 60px;
+  position: relative;
+}
+.stats-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.icons {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.icon-dec img {
+  height: 200px;
+}
+.dec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side {
+  position: absolute;
+  top: -400px;
+  left: 0px;
+  transform: translateX(-70px);
+  pointer-events: none;
+}
+.side-r {
+  position: absolute;
+  bottom: -200px;
+  right: 0px;
+  pointer-events: none;
+}
+
+.stall-details {
+  transform: translateY(-440px);
+}
+
+.toleft {
+  animation-name: toleft;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes toleft {
+  from {
+    opacity: 0;
+    transform: translateX(40px) translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px) translateY(-100px);
+  }
+}
+
+.backl {
+  animation-name: backl;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes backl {
+  from {
+    opacity: 1;
+    transform: translateX(0px) translateY(-100px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(40px) translateY(-100px);
+  }
+}
+
+.toright {
+  animation-name: toright;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes toright {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.backr {
+  animation-name: backr;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes backr {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+}

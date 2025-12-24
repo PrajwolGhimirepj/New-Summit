@@ -1,0 +1,29 @@
+.ups {
+  animation: ups 0.5s forwards cubic-bezier(0.26, 0.69, 0.58, 1.14);
+}
+
+@keyframes ups {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.down {
+  animation: down 0.5s forwards cubic-bezier(0.26, 0.69, 0.58, 1.14);
+}
+
+@keyframes down {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}

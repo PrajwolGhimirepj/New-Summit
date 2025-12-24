@@ -1,0 +1,73 @@
+.hedder-con {
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  max-width: 1920px;
+  align-self: center;
+  justify-content: space-between;
+  padding: 10px 60px 10px 60px;
+}
+
+.name-logo {
+  display: flex;
+  gap: 10px;
+}
+.name-logo img {
+  height: 90px;
+}
+.name {
+  font-size: 22px;
+}
+
+.apply-contacts {
+  font-size: 16px;
+  gap: 50px;
+  display: flex;
+  align-items: center;
+}
+.apply-contacts p {
+  cursor: pointer;
+}
+.apply {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  height: 55px;
+  padding-right: 40px;
+  background-color: rgba(135, 18, 5, 1);
+  border-radius: 5px;
+  color: aliceblue;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.apply:hover {
+  scale: 1.1;
+  background-color: rgba(5, 77, 151, 1);
+}
+.apply:hover .underScore {
+  border-bottom: 1px rgba(135, 18, 5, 1) solid;
+}
+.underScore {
+  border-bottom: 1px solid;
+}
+.nav-con {
+  width: 100vw;
+  height: 50px;
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px 20px 60px;
+  background-color: rgba(5, 77, 151, 1);
+}
+.nav-con a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+.left-nav {
+  display: flex;
+  gap: 20px;
+}
