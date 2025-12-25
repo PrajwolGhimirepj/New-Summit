@@ -5,13 +5,7 @@ const Hedder = () => {
     <>
       <div className="hedder-con small-font">
         <div className="name-logo  ">
-          <img src="Logo.png" alt="" />
-          <div className="name">
-            <p>NEW</p>
-            <p>SUMMIT</p>
-            <p>College</p>
-            <p className="small-font">LEARNERS TO LEADERS</p>
-          </div>
+          <img src="full_logo-768x285 (1).jpg" alt="" />
         </div>
         <div className="apply-contacts ">
           <p className="underScore">01-4620522/23/24</p>

@@ -1,4 +1,5 @@
 import "./Reviews.css";
+import useObserve from "../Observer";
 
 const reviewsData = [
   {
@@ -28,13 +29,19 @@ const reviewsData = [
 ];
 
 const Reviews = () => {
+  const [ref, View] = useObserve({ threshold: 0.5 });
   return (
     <div className="review-container font">
       <h2 className="stats-title ">What Our Students Say</h2>
 
       <div className="reviews">
         {reviewsData.map((item, index) => (
-          <div className="riv" key={index}>
+          <div
+            ref={ref}
+            style={{ animationDelay: `${index * 150}ms` }}
+            className={`riv ${View ? "up" : "out"}`}
+            key={index}
+          >
             <div className="name-rev">
               <p>{item.firstName}</p>
               <p>{item.lastName}</p>

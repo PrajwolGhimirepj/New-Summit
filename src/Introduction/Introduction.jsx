@@ -3,47 +3,56 @@ import "./Animations.css";
 import useObserve from "../Observer";
 
 const Introduction = () => {
-  const [ref, View] = useObserve({ threshold: 0.3 });
-  const [ref1, View1] = useObserve({ threshold: 0.4 });
-  const [ref2, View2] = useObserve({ threshold: 0.4 });
-  const [ref3, View3] = useObserve({ threshold: 0.8 });
+  const [headRef, headView] = useObserve();
+  const [textRef, textView] = useObserve();
+  const [btnRef, btnView] = useObserve();
 
   return (
-    <>
-      <div className="intro  font">
-        <div className="intro-content">
-          <div ref={ref} className={`head font-NewTitle ${View ? "ups" : ""}`}>
-            <div>
-              <p>New Summit</p>
-              <p>College</p>
-            </div>
-            <img src="Logo.png" alt="" />
+    <div className="intro font">
+      <div className="intro-content">
+        {/* TITLE */}
+        <div
+          ref={headRef}
+          className={`head font-NewTitle ${headView ? "ups" : ""}`}
+        >
+          <div>
+            <p>New Summit</p>
+            <p>College</p>
           </div>
-          <p ref={ref1} className={`p ${View1 ? "ups" : ""}`}>
-            Established in 2064 B.S. by a team of visionary professionals in the
-            field of Nepalese academia, NEW SUMMIT College (NSC) has created a
-            landmark as one of the best private colleges in Kathmandu,
-            specializing in Management, Science and Information Technology
-            streams of studies. So, NSC offers various TU affiliated programs
-            including B.Sc. CSIT, BCA, BBM & BBS. NSC envisions that up-to-date
-            knowledge and technology are two of the most indispensable assets
-            every student must possess to ...  
-          </p>
-          <div ref={ref2} className={` intro-buttons ${View2 ? "ups" : ""}`}>
-            <div className="apply">Mission</div>{" "}
-            <div className="apply">Goals</div>{" "}
-            <div className="apply">Vision</div>{" "}
-          </div>
+          <img src="Logo.png" alt="Logo" />
         </div>
 
-        <img
-          ref={ref3}
-          className={` intro-image ${View3 ? "ups" : "down"}`}
-          src="NewSummitCollege.webp"
-          alt=""
-        />
+        {/* PARAGRAPH */}
+        <p ref={textRef} className={`p ${textView ? "ups" : ""}`}>
+          Established in 2064 B.S. by a team of visionary professionals in the
+          field of Nepalese academia, NEW SUMMIT College (NSC) has created a
+          landmark as one of the best private colleges in Kathmandu,
+          specializing in Management, Science and Information Technology streams
+          of studies...
+        </p>
+
+        {/* STAGGER BUTTONS */}
+        <div ref={btnRef} className={`intro-buttons ${btnView ? "ups" : ""}`}>
+          {["Mission", "Goals", "Vision"].map((text, index) => (
+            <div
+              key={text}
+              className="apply"
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
+              {text}
+            </div>
+          ))}
+        </div>
       </div>
-    </>
+
+      {/* IMAGE */}
+      <img
+        className="intro-image"
+        src="NewSummitCollege.webp"
+        alt="New Summit College"
+      />
+    </div>
   );
 };
+
 export default Introduction;

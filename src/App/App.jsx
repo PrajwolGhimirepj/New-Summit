@@ -46,13 +46,7 @@ const App = () => {
         >
           <Hedder />
         </div>
-        <div className="Main">
-          <Landing />
-          <Introduction />
-          <Stats />
-          <Reviews />
-          <Reviews />
-        </div>
+        <Landing />
       </div>
     </>
   );

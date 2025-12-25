@@ -1,6 +1,5 @@
 .review-container {
   width: 100vw;
-
   gap: 20px;
   display: flex;
   height: max-content;
@@ -15,17 +14,19 @@
   justify-content: space-around;
 }
 .name-rev {
-  font-size: 20px;
+  font-size: 25px;
 }
 .riv {
   height: max-content;
   padding: 30px;
   width: 500px;
   color: aliceblue;
+  opacity: 0;
+  transform: translateY(50px);
   background-color: rgba(135, 18, 5, 1);
 }
 .rev-dec {
-  font-size: 12px;
+  font-size: 19px;
 }
 
 .review-actions {
@@ -33,4 +34,32 @@
   display: flex;
   justify-content: end;
   gap: 10px;
+}
+
+.up {
+  animation: up 0.5s forwards cubic-bezier(0.26, 0.69, 0.58, 1.14);
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.out {
+  animation: out 0.5s forwards cubic-bezier(0.26, 0.69, 0.58, 1.14);
+}
+
+@keyframes out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

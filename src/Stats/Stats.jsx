@@ -29,15 +29,20 @@ const statsData = [
 ];
 
 const Stats = () => {
-  const [ref, View] = useObserve({ threshold: 0.5 });
+  const [ref, View] = useObserve({ threshold: 0.4 });
   const [ref1, View1] = useObserve({ threshold: 0.5 });
+
   return (
     <div className="stats-container font">
       <h3 className="stats-title">WHY NEW SUMMIT ?</h3>
 
       <div className="icons">
         {statsData.map((item, index) => (
-          <div className="icon-dec" key={index}>
+          <div
+            key={index}
+            style={{ animationDelay: `${index * 150}ms` }}
+            className={` icon ${View ? "up" : "out"}`}
+          >
             <img src={item.img} alt={item.line1} />
             <div className="dec">
               <p className="stat-value">{item.value}</p>

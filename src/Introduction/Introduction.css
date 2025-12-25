@@ -5,7 +5,7 @@
   transform: translateY(-10px);
   border-radius: 10px;
   overflow: hidden;
-  padding: 150px 60px 0px 60px;
+  padding: 90px 90px 0px 90px;
   display: flex;
   justify-content: space-between;
 }
