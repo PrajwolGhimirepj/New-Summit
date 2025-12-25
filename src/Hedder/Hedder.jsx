@@ -4,7 +4,7 @@ import Burger from "./Burger/Burger.jsx";
 const Hedder = () => {
   return (
     <>
-      <div className="hedder-con small-font">
+      <div className="hedder-con font">
         <div className="name-logo  ">
           <img src="full_logo-768x285 (1).jpg" alt="" />
         </div>
@@ -22,7 +22,7 @@ const Hedder = () => {
           </div>
         </div>
       </div>
-      <div className="nav-con small-font">
+      <div className="nav-con font">
         <div className="left-nav">
           <a href="">About us</a>
           <a href="">Academics</a>

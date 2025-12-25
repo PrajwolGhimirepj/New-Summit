@@ -3,37 +3,15 @@
   padding: 0px;
   margin: 0px;
 }
-
-@font-face {
-  font-family: Pally-Medium;
-  src: url(Pally-Medium.otf);
-}
-@font-face {
-  font-family: Pally-Regular;
-  src: url(Pally-Regular.otf);
-}
-@font-face {
-  font-family: Expose-Medium;
-  src: url(Expose-Medium.otf);
-}
-@font-face {
-  font-family: NewTitle;
-  src: url(NewTitle-Bold.otf);
-}
-.font-NewTitle {
-  font-family: NewTitle;
-}
-.font-Expose {
-  font-family: Expose-Medium;
-}
-.small-font {
-  font-size: 7px;
-  font-weight: 200;
-  font-family: Pally-Regular;
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .font {
-  font-family: Pally-Medium;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
 }
 
 .app {

@@ -31,6 +31,7 @@ const statsData = [
 const Stats = () => {
   const [ref, View] = useObserve({ threshold: 0.4 });
   const [ref1, View1] = useObserve({ threshold: 0.5 });
+  const [ref2, View2] = useObserve({ threshold: 0.5 });
 
   return (
     <div className="stats-container font">
@@ -40,8 +41,9 @@ const Stats = () => {
         {statsData.map((item, index) => (
           <div
             key={index}
+            ref={ref2}
             style={{ animationDelay: `${index * 150}ms` }}
-            className={` icon ${View ? "up" : "out"}`}
+            className={` icon ${View2 ? "up" : "out"}`}
           >
             <img src={item.img} alt={item.line1} />
             <div className="dec">

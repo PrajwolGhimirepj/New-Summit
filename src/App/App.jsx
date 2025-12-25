@@ -47,6 +47,9 @@ const App = () => {
           <Hedder />
         </div>
         <Landing />
+        <Introduction />
+        <Stats />
+        <Reviews />
       </div>
     </>
   );

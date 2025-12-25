@@ -38,7 +38,7 @@
   padding-left: 40px;
   height: 55px;
   padding-right: 40px;
-  background-color: rgba(135, 18, 5, 1);
+  background-color: rgba(5, 77, 151, 1);
   border-radius: 5px;
   color: aliceblue;
   cursor: pointer;
@@ -46,7 +46,7 @@
 }
 .apply:hover {
   scale: 1.1;
-  background-color: rgba(5, 77, 151, 1);
+  background-color: rgba(135, 18, 5, 1);
 }
 .apply:hover .underScore {
   border-bottom: 1px rgba(135, 18, 5, 1) solid;
@@ -115,7 +115,7 @@
     padding-left: 30px;
     height: 55px;
     padding-right: 30px;
-    background-color: rgba(135, 18, 5, 1);
+    background-color: rgba(5, 77, 151, 1);
     border-radius: 5px;
     color: aliceblue;
     cursor: pointer;
@@ -193,7 +193,7 @@
     padding-left: 30px;
     height: 55px;
     padding-right: 30px;
-    background-color: rgba(135, 18, 5, 1);
+    background-color: rgba(5, 77, 151, 1);
     border-radius: 5px;
     color: aliceblue;
     cursor: pointer;
@@ -268,7 +268,7 @@
     padding-left: 20px;
     height: 40px;
     padding-right: 20px;
-    background-color: rgba(135, 18, 5, 1);
+    background-color: rgba(5, 77, 151, 1);
     border-radius: 5px;
     color: aliceblue;
     cursor: pointer;
