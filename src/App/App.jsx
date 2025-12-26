@@ -5,6 +5,8 @@ import Landing from "../Landing/Landing.jsx";
 import Introduction from "../Introduction/Introduction.jsx";
 import Stats from "../Stats/Stats.jsx";
 import Reviews from "../Reviews/Reviews.jsx";
+import Location from "../Location/Location.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 const App = () => {
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -50,6 +52,8 @@ const App = () => {
         <Introduction />
         <Stats />
         <Reviews />
+        <Location />
+        <Footer />
       </div>
     </>
   );

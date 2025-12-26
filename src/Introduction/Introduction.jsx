@@ -76,15 +76,18 @@ const Introduction = () => {
         <p className="program-title">Our Programs {widthFromRedux}</p>{" "}
         {programs.map((item, index) => (
           <div className="program-box" key={index}>
-            <div className="title">
-              {" "}
+            <div className="program-info">
               <div className="title">
-                {widthFromRedux <= 287 ? item.short : item.title}
+                {" "}
+                <div className="title">
+                  {widthFromRedux <= 287 ? item.short : item.title}
+                </div>
+              </div>
+              <div className="decc">
+                {widthFromRedux <= 187 ? "Viwe in Detail" : item.desc}
               </div>
             </div>
-            <div className="dec">
-              {widthFromRedux <= 187 ? "Viwe in Detail" : item.desc}
-            </div>
+            view
           </div>
         ))}
       </div>

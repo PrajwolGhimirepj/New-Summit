@@ -17,8 +17,8 @@
   display: flex;
   z-index: 90;
   gap: 30px;
-  justify-content: space-around;
-  font-size: 30px;
+
+  font-size: 40px;
 }
 .icon {
   opacity: 0;
@@ -27,6 +27,7 @@
   width: 210px;
 }
 .dec {
+  font-size: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,7 +140,10 @@
     font-size: 25px;
   }
   .icon img {
-    width: 100px;
+    width: 120px;
+  }
+  .dec {
+    font-size: 20px;
   }
 }
 
