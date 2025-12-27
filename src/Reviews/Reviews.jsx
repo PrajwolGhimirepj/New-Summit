@@ -38,7 +38,7 @@ const Reviews = () => {
   );
 
   return (
-    <div className="review-container font">
+    <div className="review-container QuickSand-Regular">
       <h2 className="stats-title">What Our Students Say</h2>
 
       <div className="reviews">

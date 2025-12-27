@@ -36,6 +36,7 @@
 }
 .program-title {
   font-size: 20px;
+  font-weight: 900;
 }
 .programs {
   width: 1000px;
@@ -65,30 +66,37 @@
   border-radius: 10px;
   padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
   color: rgb(255, 255, 255);
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 .program-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 .title {
   border-bottom: 1px solid;
-  font-size: 20px;
+  font-size: 16px;
   width: max-content;
+  font-weight: 600;
 }
-.dec {
-  font-size: 12px;
+.decc {
+  font-size: 14px;
+  line-height: 1.5;
+  /* Ellipsis configuration */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .background {
   width: 100vw;
   height: 100vh;
-  max-width: 19;
+
   overflow: hidden;
   position: absolute;
   top: 0px;
@@ -152,7 +160,7 @@
   }
 }
 
-@media (max-width: 912px) {
+@media (max-width: 959px) {
   .landing {
     height: 500px;
     width: 100vw;
@@ -189,7 +197,7 @@
   }
 }
 
-@media (max-width: 741px) {
+@media (max-width: 780px) {
   .landing {
     height: max-content;
     padding-top: 150px;

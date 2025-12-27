@@ -9,9 +9,21 @@
   font-style: normal;
 }
 
-.font {
+.Neu-Bold {
   font-family: "Bebas Neue", sans-serif;
+}
+.Neu-Bold-Thin {
+  font-weight: 100;
+
+  font-family: "Bebas Neue", sans-serif;
+}
+.QuickSand-Regular {
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
+}
+.QuickSand-Bold {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
 }
 
 .app {

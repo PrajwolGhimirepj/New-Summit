@@ -34,7 +34,7 @@ const Stats = () => {
   const [ref2, View2] = useObserve({ threshold: 0.5 });
 
   return (
-    <div className="stats-container font">
+    <div className="stats-container QuickSand-Regular">
       <h3 className="stats-title">WHY NEW SUMMIT ?</h3>
 
       <div className="icons">

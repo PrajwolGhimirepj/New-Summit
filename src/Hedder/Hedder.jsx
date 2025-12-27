@@ -4,7 +4,7 @@ import Burger from "./Burger/Burger.jsx";
 const Hedder = () => {
   return (
     <>
-      <div className="hedder-con font">
+      <div className="hedder-con QuickSand-Regular">
         <div className="name-logo  ">
           <img src="full_logo-768x285 (1).jpg" alt="" />
         </div>
@@ -17,12 +17,12 @@ const Hedder = () => {
             </div>
           </div>
 
-          <div className="apply">
+          <div className="apply QuickSand-Bold">
             <span className="underScore">Apply Now</span>
           </div>
         </div>
       </div>
-      <div className="nav-con font">
+      <div className="nav-con font QuickSand-Regular">
         <div className="left-nav">
           <a href="">About us</a>
           <a href="">Academics</a>

@@ -31,11 +31,11 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="landing font">
+    <div className="landing QuickSand-Regular">
       <div className="lading-img fade">
         <img src="Colle.png" alt="" />
 
-        <div className="monolauge font-NewTitle">
+        <div className="monolauge Neu-Bold">
           <p>BEST</p>
           <p>EDUCATION</p>
           <div className="img-text">

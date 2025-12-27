@@ -3,13 +3,12 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer font">
+    <footer className="footer font QuickSand-Regular">
       <div className="footer-left">
         <div className="logo-placeholder">
           <img src="full_logo-768x285 (1).jpg" alt="" />
         </div>
       </div>
-
       <div className="footer-right">
         <p>Shantinagar, New Baneshwor</p>
         <p>01-4620522, 4620523, 4620524</p>
