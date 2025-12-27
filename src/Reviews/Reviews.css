@@ -1,11 +1,13 @@
 .review-container {
   width: 100vw;
+  max-width: 1920px;
   gap: 20px;
   display: flex;
   height: max-content;
   flex-direction: column;
   align-items: center;
   padding-bottom: 90px;
+  position: relative;
 }
 
 .reviews {
@@ -20,13 +22,14 @@
   font-size: 25px;
 }
 .riv {
-  height: 400px;
+  height: max-content;
   padding: 30px;
   width: 500px;
   color: aliceblue;
   opacity: 1;
   border-radius: 10px;
   background-color: rgba(5, 77, 151, 1);
+  z-index: 90;
 }
 .rev-dec {
   font-size: 15px;
@@ -40,6 +43,7 @@
   display: flex;
   justify-content: end;
   gap: 10px;
+  z-index: 96;
 }
 
 .up {
@@ -67,6 +71,17 @@
     opacity: 0;
   }
 }
+
+.bg-left {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  z-index: 9px;
+}
+.bg-left img {
+  height: 100%;
+}
+
 @media (max-width: 1170px) {
   .reviews {
     width: 100%;

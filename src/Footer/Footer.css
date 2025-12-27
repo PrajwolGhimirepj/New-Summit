@@ -40,10 +40,13 @@
 .Social-icon {
   height: 50px;
   width: 50px;
-  background-color: blue;
+
   border-radius: 10px;
 }
 
+.Social-icon img {
+  height: 100%;
+}
 /* @media (max-width: 768px) {
   .footer {
     flex-direction: column;

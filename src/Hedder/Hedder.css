@@ -73,6 +73,12 @@
   display: flex;
   gap: 20px;
 }
+.left-nav a {
+  cursor: pointer;
+}
+.left-navv a {
+  cursor: pointer;
+}
 .left-navv {
   display: flex;
   gap: 20px;

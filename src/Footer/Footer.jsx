@@ -19,9 +19,15 @@ const Footer = () => {
         <p>Socials</p>
         <div className="Social-icons">
           {" "}
-          <div className="Social-icon"></div>
-          <div className="Social-icon"></div>
-          <div className="Social-icon"></div>
+          <div className="Social-icon">
+            <img src="./Social/Facebook.svg" alt="" />
+          </div>
+          <div className="Social-icon">
+            <img src="./Social/Instagram.svg" alt="" />
+          </div>
+          <div className="Social-icon">
+            <img src="./Social/Tiktok.svg" alt="" />
+          </div>
         </div>
       </div>
       <div className="Socials">

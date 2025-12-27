@@ -39,7 +39,7 @@ const Reviews = () => {
 
   return (
     <div className="review-container QuickSand-Regular">
-      <h2 className="stats-title">What Our Students Say</h2>
+      <h2 className="stats-title Neu-Bold">What Our Students Say</h2>
 
       <div className="reviews">
         {reviewsData.map((item, index) => {
@@ -60,6 +60,9 @@ const Reviews = () => {
       <div className="review-actions">
         <div className="apply">Submit a Review</div>
         <div className="apply">More</div>
+      </div>
+      <div className="bg-left">
+        <img src="SIde-Summit.svg" alt="" />
       </div>
     </div>
   );

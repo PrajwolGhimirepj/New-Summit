@@ -12,11 +12,7 @@
 .Neu-Bold {
   font-family: "Bebas Neue", sans-serif;
 }
-.Neu-Bold-Thin {
-  font-weight: 100;
 
-  font-family: "Bebas Neue", sans-serif;
-}
 .QuickSand-Regular {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
@@ -25,8 +21,11 @@
   font-family: "Quicksand", sans-serif;
   font-weight: 900;
 }
-
+body {
+  overflow-x: hidden;
+}
 .app {
+  width: 100vw;
   max-width: 1920px;
   position: relative;
   display: flex;
@@ -44,4 +43,13 @@
   right: 0;
   z-index: 1000;
   width: 100%;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  color: rgb(0, 0, 0);
 }

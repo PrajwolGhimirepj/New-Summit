@@ -21,7 +21,7 @@ const Location = () => {
         </div>
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.155719930531!2d85.34243441454169!3d27.68751290132568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198e8862b41f%3A0xff9481961fde66ce!2sM8QW%2BRXF%2C%20Kathmandu%2044600!5e1!3m2!1sen!2snp!4v1766765673760!5m2!1sen!2snp"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1679.0854472075705!2d85.3422487!3d27.6870195!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199ea74f327d%3A0xea78ffa3ca66c187!2sNew%20Summit%20College!5e1!3m2!1sen!2snp!4v1766835824225!5m2!1sen!2snp"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>

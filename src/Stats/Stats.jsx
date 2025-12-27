@@ -35,7 +35,7 @@ const Stats = () => {
 
   return (
     <div className="stats-container QuickSand-Regular">
-      <h3 className="stats-title">WHY NEW SUMMIT ?</h3>
+      <h3 className="stats-title Neu-Bold">WHY NEW SUMMIT ?</h3>
 
       <div className="icons">
         {statsData.map((item, index) => (

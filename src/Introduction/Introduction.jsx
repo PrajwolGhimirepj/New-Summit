@@ -32,19 +32,25 @@ const Introduction = () => {
     {
       title: "Bachelors of Science in (B.Sc.CSIT):",
       desc: "The Bachelor of Science in Computer Science and Information Technology (BSc.CSIT), is a 4-year/8-semester course, designed to provide the students with all sorts of knowledge and skills in the fields of Information Technology and Computing. The program involves, in addition to conventional lectures, a great deal of  ",
-      short: "B.Sc.CSIT",
+      short: "CSIT",
     },
   ];
 
   return (
     <div className="intro QuickSand-Regular">
-      {/* LEFT CONTENT */}
       <div className="intro-content">
-        {/* HEADER */}
-        <div
-          ref={headRef}
-          className={`head QuickSand-Bold ${headView ? "ups" : ""}`}
-        >
+        {/* <div className="porgrams-small-con">
+          <div className="QuickSand-Bold">Our Programs</div>
+          <div className="programs-small">
+            {["BCA", "BBS", "CSIT"].map((item) => (
+              <div key={item} className="programs-dot">
+                {item}
+              </div>
+            ))}
+          </div>
+        </div> */}
+
+        <div ref={headRef} className={`head Neu-Bold ${headView ? "ups" : ""}`}>
           <div>
             <p>New Summit</p>
             <p>College</p>
