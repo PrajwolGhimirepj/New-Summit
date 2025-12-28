@@ -58,7 +58,6 @@ const Introduction = () => {
           <img src="Logo.png" alt="Logo" />
         </div>
 
-        {/* INTRO TEXT */}
         <p ref={textRef} className={`p ${textView ? "ups" : ""}`}>
           Established in 2064 B.S. by a team of visionary professionals in the
           field of Nepalese academia, NEW SUMMIT College (NSC) has created a
@@ -67,7 +66,7 @@ const Introduction = () => {
           of studies...
         </p>
 
-        {/* BUTTONS */}
+        {/* Goals Section */}
         <div
           ref={btnRef}
           className={`intro-buttons QuickSand-Bold ${btnView ? "ups" : ""}`}
@@ -121,6 +120,8 @@ const Introduction = () => {
       <div className="intro-image">
         <img src="NewSummitCollege.webp" alt="New Summit College" />
       </div>
+
+      {/* Our Programs */}
 
       <div
         className="overflowfix-test"

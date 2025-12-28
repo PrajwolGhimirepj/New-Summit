@@ -32,10 +32,29 @@ const Stats = () => {
   const [ref, View] = useObserve({ threshold: 0.4 });
   const [ref1, View1] = useObserve({ threshold: 0.5 });
   const [ref2, View2] = useObserve({ threshold: 0.5 });
+  const [ref3, View3] = useObserve({ threshold: 0.5 });
 
   return (
     <div className="stats-container QuickSand-Regular">
-      <h3 className="stats-title Neu-Bold">WHY NEW SUMMIT ?</h3>
+      <div
+        ref={ref3}
+        className={`stats-title Neu-Bold ${View3 ? "ups" : "fadeout"}`}
+      >
+        <div>
+          <p>WHY</p>
+          <p>NEW SUMMIT ?</p>
+        </div>
+        {/* <img src="Logo.png" alt="Logo" /> */}
+      </div>
+      <div className="stats-intro">
+        New Summit provides excellent student services, including
+        state-of-the-art laboratories, four in-demand bachelor’s programs, a
+        1:16 student–faculty ratio, and partnerships with 50+ industry leaders
+        that boost learning opportunities and help sharpen students’ potential.”
+      </div>
+      {/* <h3 className="stats-title Neu-Bold">
+        <p> WHY NEW SUMMIT</p>
+      </h3> */}
 
       <div className="icons">
         {statsData.map((item, index) => (

@@ -10,12 +10,14 @@ import Location from "../Location/Location.jsx";
 import Explore from "../Explore-more/Explore.jsx";
 import Footer from "../Footer/Footer.jsx";
 import Faculty from "../Routes/Faculty/Faculty.jsx";
-
+import Offer from "../Offer/Offer.jsx";
 const HomePage = () => (
   <>
     <Landing />
     <Introduction />
+    <Offer />
     <Stats />
+
     <Reviews />
     <Location />
     <Explore />

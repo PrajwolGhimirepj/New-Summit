@@ -32,7 +32,7 @@ const Landing = () => {
 
   return (
     <div className="landing QuickSand-Regular">
-      <div className="lading-img fade">
+      <div className="lading-img fadein">
         <img src="Colle.png" alt="" />
 
         <div className="monolauge Neu-Bold">

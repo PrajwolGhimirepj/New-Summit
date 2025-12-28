@@ -1,0 +1,69 @@
+import "./Offer.css";
+import useObserve from "../Observer";
+
+const Offer = () => {
+  const [ref1, View1] = useObserve({ threshold: 0.1 });
+  const [ref2, View2] = useObserve({ threshold: 0.1 });
+  return (
+    <section className="offer-con QuickSand-Regular ">
+      <div
+        ref={ref1}
+        className={`offer-title Neu-Bold" Neu-Bold ${View1 ? "ups" : ""}`}
+      >
+        <h2>WHAT WE OFFER </h2>
+      </div>
+
+      {/* Content */}
+      <div className="offer-content">
+        {/* Left: Points */}
+        <div className="offer-points">
+          <div className="point-block">
+            <h4>Student Success</h4>
+            <ul>
+              <li>Optimize student support</li>
+              <li>Innovative processes to improve retention and learning</li>
+              <li>Recruitment and retention of quality faculty and staff</li>
+              <li>Provide modern technological support</li>
+            </ul>
+          </div>
+
+          <div className="point-block ">
+            <h4>Innovation</h4>
+            <ul>
+              <li>Support research and creative activities</li>
+              <li>Diversity and inclusion-driven collaboration</li>
+              <li>Integrity, transparency, and accountability</li>
+            </ul>
+          </div>
+
+          <div className="point-block">
+            <h4>Collaboration</h4>
+            <ul>
+              <li>Community and organizational partnerships</li>
+              <li>Local, regional, and international engagement</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Right: Images */}
+        <div className="offer-images">
+          <div
+            ref={ref2}
+            className={`image-box img1" Neu-Bold ${View2 ? "ups" : "fadeout"}`}
+          >
+            <img src="/Students/dd.jpg" alt="100% Result" />
+          </div>
+          <div
+            ref={ref2}
+            style={{ animationDelay: "150ms" }}
+            className={`image-box img1" Neu-Bold ${View2 ? "ups" : "fadeout"}`}
+          >
+            <img src="/Students/Bca.jpg" alt="Student" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Offer;

@@ -91,7 +91,17 @@
 .nav-button:active {
   background-color: #003d7a;
 }
+@media (max-width: 864px) {
+  .faculty-container {
+    padding: 40px 24px;
+    width: 100vw;
+    max-width: 1920px;
+    padding: 180px 50px 0px 50px;
+    margin: 0 auto;
 
+    overflow: hidden;
+  }
+}
 @media (max-width: 768px) {
   .faculty-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -100,7 +110,7 @@
 
 @media (max-width: 480px) {
   .faculty-container {
-    padding: 20px 16px;
+    padding: 180px 10px 0px 10px;
   }
 
   .faculty-title {

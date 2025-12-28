@@ -22,8 +22,8 @@ const reviewsData = [
       "I really appreciate the guidance from the teachers and the collaborative environment among students. The BCA curriculum is well-structured and industry-focused.",
   },
   {
-    firstName: "Dikshya",
-    lastName: "Sigdel",
+    firstName: "Prajina",
+    lastName: "Shrestha",
     review:
       "The BCA program at New Summit College helped me build a strong foundation in programming and problem-solving. The faculty members are supportive and always encourage practical learning.",
   },
@@ -31,15 +31,22 @@ const reviewsData = [
 
 const Reviews = () => {
   const refs = useRef([]);
+  const [ref3, View3] = useObserve({ threshold: 0.5 });
 
-  // create one observer PER ITEM
-  const views = reviewsData.map(
-    (_, i) => useObserve({ threshold: 1 }) // 👈 allowed because list length is static
-  );
+  const views = reviewsData.map((_, i) => useObserve({ threshold: 1 }));
 
   return (
     <div className="review-container QuickSand-Regular">
-      <h2 className="stats-title Neu-Bold">What Our Students Say</h2>
+      <div
+        ref={ref3}
+        className={`head stats-title Neu-Bold ${View3 ? "ups" : ""}`}
+      >
+        <div>
+          <p>WHAT OUR </p>
+          <p>Students Say ?</p>
+        </div>
+        {/* <img src="Logo.png" alt="Logo" /> */}
+      </div>
 
       <div className="reviews">
         {reviewsData.map((item, index) => {

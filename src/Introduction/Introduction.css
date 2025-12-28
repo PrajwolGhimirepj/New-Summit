@@ -7,7 +7,6 @@
   padding: 50px 90px 0px 90px;
   display: flex;
   justify-content: space-between;
-
   z-index: 100;
   position: relative;
   transform: translateY(-0px);
@@ -20,12 +19,18 @@
   max-width: 800px;
   padding-right: 20px;
 }
+.intro-content p {
+  font-size: 17px;
+}
 .head {
   display: flex;
   gap: 20px;
   align-items: end;
   font-size: 50px;
   opacity: 0;
+}
+.head p {
+  font-size: 50px;
 }
 
 .head img {
@@ -47,7 +52,6 @@
 .overflowfix-test {
   display: flex;
   flex-direction: column;
-
   gap: 10px;
   position: absolute;
   right: 50px;
@@ -167,12 +171,12 @@
   .head img {
     height: 80px;
   }
-  .head {
+  .head p {
     display: flex;
     gap: 20px;
     align-items: end;
-    font-size: 35px;
-    opacity: 0;
+    font-size: 30px;
+    opacity: 1;
   }
 }
 
@@ -188,16 +192,7 @@
     object-fit: cover;
   }
 }
-/* @media (max-width: 513px) {
-  .porgrams-small-con {
-    top: -75px;
-    font-size: 15px;
-  }
 
-  .programs-dot {
-    font-size: 12px;
-  }
-} */
 @media (max-width: 790px) {
   .overflowfix-test {
     display: none;
@@ -219,11 +214,11 @@
   .head img {
     height: 60px;
   }
-  .head {
+  .head p {
     display: flex;
     gap: 20px;
     align-items: end;
     font-size: 25px;
-    opacity: 0;
+    opacity: 1;
   }
 }

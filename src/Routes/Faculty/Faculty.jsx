@@ -45,11 +45,6 @@ const Faculty = () => {
           </div>
         ))}
       </div>
-
-      <div className="explore-section QuickSand-Regular">
-        <Explore />
-        <br />
-      </div>
     </div>
   );
 };
