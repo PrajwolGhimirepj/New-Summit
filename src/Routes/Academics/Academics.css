@@ -1,9 +1,8 @@
 .academics-con {
-  padding: 20px;
   max-width: 1920px;
   margin: auto;
-  background: #fff;
-  padding: 180px 90px 0px 90px;
+
+  padding: 180px 60px 0px 60px;
 }
 button {
   text-decoration: none;
@@ -11,19 +10,9 @@ button {
 }
 /* NAV */
 .academics-nav {
-  padding: 10px;
   display: flex;
   gap: 10px;
   justify-content: start;
-}
-
-.nav-btn {
-  background-color: rgba(5, 77, 151, 1);
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
 .nav-btn.active {
@@ -34,7 +23,7 @@ button {
 .academics-details {
   display: flex;
   gap: 20px;
-  padding: 20px;
+
   margin-top: 15px;
 }
 
@@ -57,7 +46,7 @@ button {
 
 /* LISTS */
 .details-left ul {
-  padding-left: 18px;
+  padding-left: 16px;
 }
 
 .details-left li {
@@ -83,20 +72,13 @@ button {
   font-size: 14px;
 }
 
-/* FOOTER */
-.academics-footer {
-  margin-top: 15px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
 .active {
   scale: 1.1;
   padding: 10px 20px 10px 20px;
   background-color: rgba(135, 18, 5, 1);
   color: aliceblue;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .notactive {
@@ -105,11 +87,11 @@ button {
   background-color: rgba(5, 77, 151, 1);
   color: aliceblue;
   border-radius: 5px;
+  cursor: pointer;
 }
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .academics-con {
-    padding: 20px;
     max-width: 1920px;
     margin: auto;
     background: #fff;
@@ -126,11 +108,10 @@ button {
 
 @media (max-width: 573px) {
   .academics-con {
-    padding: 20px;
     max-width: 1920px;
     margin: auto;
     background: #fff;
-    padding: 120px 10px 0px 10px;
+    padding: 130px 10px 0px 10px;
   }
   .academics-details {
     flex-direction: column;
