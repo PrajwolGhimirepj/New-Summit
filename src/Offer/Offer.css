@@ -40,9 +40,11 @@
   margin-bottom: 25px;
   font-size: 20px;
 }
-
+.point-block ul {
+  font-size: 17px;
+}
 .point-block h4 {
-  background: #1565c0;
+  background-color: rgba(5, 77, 151, 1);
   color: #fff;
   display: inline-block;
   padding: 6px 14px;
@@ -66,6 +68,7 @@
   padding: 20px;
   display: flex;
   gap: 20px;
+  opacity: 0;
   justify-content: center;
   align-items: center;
 }
@@ -75,7 +78,7 @@
   height: 100%;
   overflow: hidden;
   border-radius: 12px;
-  opacity: 0;
+  opacity: 1;
 }
 
 .image-box img {
@@ -84,7 +87,8 @@
   object-fit: cover;
 }
 .img1 {
-  opacity: 0;
+  opacity: 1;
+  transform: translateY(-90px);
 }
 
 .fadeout {
@@ -110,6 +114,7 @@
   }
   .offer-title h2 {
     font-size: 40px;
+
     font-weight: 700;
   }
 
@@ -153,6 +158,10 @@
   }
   .img1 {
     transform: translateY(70px);
+  }
+  .offer-title h2 {
+    font-size: 30px;
+    font-weight: 700;
   }
 }
 @media (max-width: 358px) {

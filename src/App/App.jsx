@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import "./Font-Sizes.css";
 
 import Hedder from "../Hedder/Hedder.jsx";
 import Landing from "../Landing/Landing.jsx";
@@ -11,13 +13,15 @@ import Explore from "../Explore-more/Explore.jsx";
 import Footer from "../Footer/Footer.jsx";
 import Faculty from "../Routes/Faculty/Faculty.jsx";
 import Offer from "../Offer/Offer.jsx";
+import Admissions from "../Routes/Admission/Admissions.jsx";
+
+import Academics from "../Routes/Academics/Academics.jsx";
 const HomePage = () => (
   <>
     <Landing />
     <Introduction />
     <Offer />
     <Stats />
-
     <Reviews />
     <Location />
     <Explore />
@@ -62,18 +66,12 @@ const App = () => {
         <Hedder />
       </div>
 
-      <div className="main-content QuickSand-Regular">
+      <div className="main-content ">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/faculty" element={<Faculty />} />
-          <Route
-            path="/admissions"
-            element={<div className="error">Page not found</div>}
-          />
-          <Route
-            path="/academics"
-            element={<div className="error">Page not found</div>}
-          />
+          <Route path="/admissions" element={<Admissions />} />
+          <Route path="/academics" element={<Academics />} />
           <Route
             path="*"
             element={<div className="error">Page not found</div>}
@@ -84,7 +82,6 @@ const App = () => {
   );
 };
 
-// Wrap App with Router
 const AppWrapper = () => (
   <Router>
     <App />

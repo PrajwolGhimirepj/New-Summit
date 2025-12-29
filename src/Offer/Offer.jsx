@@ -2,7 +2,7 @@ import "./Offer.css";
 import useObserve from "../Observer";
 
 const Offer = () => {
-  const [ref1, View1] = useObserve({ threshold: 0.1 });
+  const [ref1, View1] = useObserve({ threshold: 0.6 });
   const [ref2, View2] = useObserve({ threshold: 0.1 });
   return (
     <section className="offer-con QuickSand-Regular ">
@@ -46,18 +46,14 @@ const Offer = () => {
         </div>
 
         {/* Right: Images */}
-        <div className="offer-images">
-          <div
-            ref={ref2}
-            className={`image-box img1" Neu-Bold ${View2 ? "ups" : "fadeout"}`}
-          >
+        <div
+          ref={ref2}
+          className={`" offer-images Neu-Bold ${View2 ? "ups" : "fadeout"}`}
+        >
+          <div className="image-box img1">
             <img src="/Students/dd.jpg" alt="100% Result" />
           </div>
-          <div
-            ref={ref2}
-            style={{ animationDelay: "150ms" }}
-            className={`image-box img1" Neu-Bold ${View2 ? "ups" : "fadeout"}`}
-          >
+          <div className="image-box img2">
             <img src="/Students/Bca.jpg" alt="Student" />
           </div>
         </div>

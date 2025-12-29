@@ -9,7 +9,7 @@ const Location = () => {
       <div className="location-con">
         <div className="loc-title QuickSand-Bold">
           {/* <div className="bold">We Are</div> */}
-          <div ref={ref3} className={`  Neu-Bold ${View3 ? "ups" : ""}`}>
+          <div ref={ref3} className={` loc  Neu-Bold ${View3 ? "ups" : ""}`}>
             <div className="title-text">
               <p>WE ARE </p>
               <p>Located At</p>
