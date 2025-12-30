@@ -1,5 +1,6 @@
 import "./Stats.css";
 import useObserve from "../Observer";
+import GalleryDis from "../Exprimental/GalleryDis.jsx";
 
 const statsData = [
   {
@@ -36,15 +37,12 @@ const Stats = () => {
 
   return (
     <div className="stats-container QuickSand-Regular">
-      <div
-        ref={ref3}
-        className={`stats-title Neu-Bold ${View3 ? "ups" : "fadeout"}`}
-      >
+      <div className="stats-title Neu-Bold">
         <div>
           <p>WHY</p>
           <p>NEW SUMMIT ?</p>
         </div>
-        {/* <img src="Logo.png" alt="Logo" /> */}
+        <GalleryDis />
       </div>
       <div className="stats-intro">
         New Summit provides excellent student services, including
@@ -73,6 +71,10 @@ const Stats = () => {
           </div>
         ))}
       </div>
+      {/* 
+      <div className="top-left"></div>
+      <div className="top-left"></div> */}
+
       <div>
         <img
           ref={ref}

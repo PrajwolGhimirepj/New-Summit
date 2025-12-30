@@ -10,8 +10,6 @@
   padding-bottom: 40px;
   flex-wrap: wrap;
   gap: 20px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .footer-left {

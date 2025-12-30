@@ -1,0 +1,83 @@
+.gallaryDis-con {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 400px;
+  height: 150px;
+  position: relative;
+}
+.gallaryDis-con img {
+  height: 100px;
+  width: 200px;
+}
+.View-btn {
+  display: inline;
+  padding: 10px 15px 10px 15px;
+  background-color: rgba(5, 77, 151, 1);
+
+  font-size: 16px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: aliceblue;
+}
+.View-btn:hover {
+  scale: 1.1;
+}
+.photo1 {
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  background-color: aliceblue;
+}
+.photo2 {
+  position: absolute;
+  top: 10px;
+  left: -140px;
+  scale: 0.9;
+  background-color: aliceblue;
+}
+
+.photo3 {
+  position: absolute;
+  scale: 0.9;
+  top: 40px;
+  left: 20px;
+  background-color: aliceblue;
+}
+
+@media (max-width: 918px) {
+  .gallaryDis-con {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 300px;
+    height: 150px;
+    position: relative;
+  }
+  .gallaryDis-con img {
+    height: 100px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 655px) {
+  .gallaryDis-con {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100px;
+    height: 150px;
+    position: relative;
+  }
+  .gallaryDis-con img {
+    height: 90px;
+    width: 90px;
+  }
+  .photo3 {
+    position: absolute;
+    scale: 0.9;
+    top: 0px;
+    left: -30px;
+    background-color: aliceblue;
+  }
+}

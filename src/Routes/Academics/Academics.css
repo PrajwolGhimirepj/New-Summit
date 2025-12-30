@@ -65,7 +65,6 @@ button {
   padding: 30px;
   margin: 10px 0;
   text-align: center;
-  border-radius: 6px;
 }
 
 .scholarship {
@@ -77,7 +76,7 @@ button {
   padding: 10px 20px 10px 20px;
   background-color: rgba(135, 18, 5, 1);
   color: aliceblue;
-  border-radius: 5px;
+
   cursor: pointer;
 }
 
@@ -86,7 +85,7 @@ button {
   padding: 10px 20px 10px 20px;
   background-color: rgba(5, 77, 151, 1);
   color: aliceblue;
-  border-radius: 5px;
+
   cursor: pointer;
 }
 /* RESPONSIVE */

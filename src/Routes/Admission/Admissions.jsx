@@ -1,4 +1,5 @@
 import "./Admissions.css";
+import image from "./Group.png";
 
 const Admissions = ({ selectedProgram }) => {
   return (
@@ -51,10 +52,7 @@ const Admissions = ({ selectedProgram }) => {
 
         {/* RIGHT */}
         <div className="admission-right">
-          <img
-            src="514033097_1167956155347613_3040296337337789315_n.jpg"
-            alt=""
-          />
+          <img src={image} alt="" />
         </div>
       </div>
     </div>

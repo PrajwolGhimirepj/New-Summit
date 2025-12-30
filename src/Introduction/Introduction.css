@@ -141,6 +141,9 @@
   }
 }
 @media (max-width: 913px) {
+  .intro-image {
+    height: 300px;
+  }
   .overflowfix-test {
     display: flex;
     flex-direction: column;
@@ -163,7 +166,7 @@
 
 @media (max-width: 596px) {
   .intro-image {
-    height: 400px;
+    height: 300px;
   }
   .intro-image img {
     object-fit: cover;
@@ -206,7 +209,7 @@
 
 @media (max-width: 376px) {
   .intro-image {
-    height: 400px;
+    height: 200px;
   }
   .intro-image img {
     object-fit: cover;

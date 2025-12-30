@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Academics.css";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const academicsData = {
   BCA: {
@@ -93,7 +94,7 @@ const academicsData = {
 
 const Academics = () => {
   const [activeProgram, setActiveProgram] = useState("BCA");
-
+  const navigate = useNavigate();
   const program = academicsData[activeProgram];
 
   return (
@@ -137,7 +138,14 @@ const Academics = () => {
           </ul>
 
           <div className="actions ">
-            <button className="apply QuickSand-Bold">Apply</button>
+            <button
+              onClick={() => {
+                navigate("/admissions");
+              }}
+              className="apply QuickSand-Bold"
+            >
+              Apply
+            </button>
             <button className="apply QuickSand-Bold">Contacts</button>
           </div>
         </div>

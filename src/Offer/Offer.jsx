@@ -1,14 +1,17 @@
 import "./Offer.css";
 import useObserve from "../Observer";
+import img2 from "./Crop.png";
 
 const Offer = () => {
-  const [ref1, View1] = useObserve({ threshold: 0.6 });
+  const [ref1, View1] = useObserve({ threshold: 0.1 });
   const [ref2, View2] = useObserve({ threshold: 0.1 });
   return (
     <section className="offer-con QuickSand-Regular ">
       <div
         ref={ref1}
-        className={`offer-title Neu-Bold" Neu-Bold ${View1 ? "ups" : ""}`}
+        className={`offer-title Neu-Bold" Neu-Bold ${
+          View1 ? "ups" : "fadeout"
+        }`}
       >
         <h2>WHAT WE OFFER </h2>
       </div>
@@ -54,7 +57,7 @@ const Offer = () => {
             <img src="/Students/dd.jpg" alt="100% Result" />
           </div>
           <div className="image-box img2">
-            <img src="/Students/Bca.jpg" alt="Student" />
+            <img src={img2} alt="Student" />
           </div>
         </div>
       </div>
