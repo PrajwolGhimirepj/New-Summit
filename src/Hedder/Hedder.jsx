@@ -95,6 +95,12 @@ const Hedder = () => {
           >
             Admissions
           </a>
+          <a
+            className={isActive("/faculty") ? "activeNav" : "notActiveNav"}
+            onClick={() => handleRouteChange("Faculty")}
+          >
+            Faculty
+          </a>
         </div>
 
         <div className="left-navv">
@@ -113,31 +119,16 @@ const Hedder = () => {
           </a>
 
           <a
-            className={isActive("/contact") ? "activeNav" : "notActiveNav"}
-            onClick={() => handleRouteChange("Contact")}
+            className={isActive("/notices") ? "activeNav" : "notActiveNav"}
+            onClick={() => handleRouteChange("Notices")}
           >
-            Contact
+            Notices
           </a>
-
           <a
             className={isActive("/faq") ? "activeNav" : "notActiveNav"}
             onClick={() => handleRouteChange("FAQ")}
           >
             FAQ
-          </a>
-
-          <a
-            className={isActive("/faculty") ? "activeNav" : "notActiveNav"}
-            onClick={() => handleRouteChange("Faculty")}
-          >
-            Faculty
-          </a>
-
-          <a
-            className={isActive("/notices") ? "activeNav" : "notActiveNav"}
-            onClick={() => handleRouteChange("Notices")}
-          >
-            Notices
           </a>
         </div>
 

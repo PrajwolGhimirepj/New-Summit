@@ -14,6 +14,7 @@ import Footer from "../Footer/Footer.jsx";
 import Faculty from "../Routes/Faculty/Faculty.jsx";
 import Offer from "../Offer/Offer.jsx";
 import Admissions from "../Routes/Admission/Admissions.jsx";
+import Gallery from "../Routes/Gallery/Gallery.jsx";
 
 import Academics from "../Routes/Academics/Academics.jsx";
 const HomePage = () => (
@@ -72,6 +73,7 @@ const App = () => {
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/academics" element={<Academics />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route
             path="*"
             element={<div className="error">Page not found</div>}

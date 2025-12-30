@@ -7,26 +7,39 @@ const Faculty = () => {
   const facultyMembers = [
     {
       id: 1,
-      name: "Parichaya aadhikari",
-      degree: "Masters in CS",
+      name: "Full Name",
+      degree: "Qulification",
       employment: "Full-Time",
     },
     {
       id: 2,
-      name: "Parichaya aadhikari",
-      degree: "Masters in CS",
+
+      name: "Full Name",
+      degree: "Qulification",
       employment: "Full-Time",
     },
     {
       id: 3,
-      name: "Parichaya aadhikari",
-      degree: "Masters in CS",
+      name: "Full Name",
+      degree: "Qulification",
       employment: "Full-Time",
     },
     {
       id: 4,
-      name: "Parichaya aadhikari",
-      degree: "Masters in CS",
+      name: "Full Name",
+      degree: "Qulification",
+      employment: "Full-Time",
+    },
+    {
+      id: 5,
+      name: "Full Name",
+      degree: "Qulification",
+      employment: "Full-Time",
+    },
+    {
+      id: 6,
+      name: "Full Name",
+      degree: "Qulification",
       employment: "Full-Time",
     },
   ];
