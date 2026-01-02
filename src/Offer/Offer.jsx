@@ -9,11 +9,13 @@ const Offer = () => {
     <section className="offer-con QuickSand-Regular ">
       <div
         ref={ref1}
-        className={`offer-title Neu-Bold" Neu-Bold ${
-          View1 ? "ups" : "fadeout"
-        }`}
+        className={`stats-title Neu-Bold" Neu-Bold ${View1 ? "ups" : ""}`}
       >
-        <h2>WHAT WE OFFER </h2>
+        <img className="title-img" src="Union.png" alt="" />
+        <div>
+          <p>What WE</p>
+          <p>Offer?</p>
+        </div>
       </div>
 
       {/* Content */}
@@ -51,7 +53,7 @@ const Offer = () => {
         {/* Right: Images */}
         <div
           ref={ref2}
-          className={`" offer-images Neu-Bold ${View2 ? "ups" : "fadeout"}`}
+          className={`" offer-images Neu-Bold ${View2 ? "ups" : "downs"}`}
         >
           <div className="image-box img1">
             <img src="/Students/dd.jpg" alt="100% Result" />

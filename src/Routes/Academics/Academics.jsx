@@ -162,6 +162,7 @@ const Academics = () => {
           </p>
         </div>
       </div>
+      <img className="bgImg-summmit" src="Group 21.png" alt="" />
     </div>
   );
 };

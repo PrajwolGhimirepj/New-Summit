@@ -4,11 +4,21 @@ import img1 from "./1.jpg";
 import img2 from "./2.jpg";
 import img3 from "./3.jpg";
 
+import { useNavigate, useLocation } from "react-router-dom";
+
 const GalleryDis = () => {
+  const navigate = useNavigate();
   return (
     <>
       <section className="gallaryDis-con QuickSand-Regular">
-        <div className="View-btn  QuickSand-Bold ">View Gallery</div>
+        <div
+          onClick={() => {
+            navigate("/gallery");
+          }}
+          className="View-btn  QuickSand-Bold "
+        >
+          View Gallery
+        </div>
         <img
           style={{ animationDelay: "0s" }}
           className="photo1 float"

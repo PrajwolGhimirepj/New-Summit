@@ -124,7 +124,7 @@ const Introduction = () => {
       {/* Our Programs */}
 
       <div
-        className="overflowfix-test"
+        className="overflowfix-test "
         style={{ width: `${widthFromRedux}px` }}
       >
         <p className="program-title">Our Programs</p>

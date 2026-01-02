@@ -1,7 +1,9 @@
 import React from "react";
+import useObserve from "../Observer";
 import "./Reviews.css";
 
 const Review = () => {
+  const [ref1, View1] = useObserve({ threshold: 0.1 });
   const reviewsData = [
     {
       firstName: "Dikshya",
@@ -31,9 +33,16 @@ const Review = () => {
 
   return (
     <div className="review-container QuickSand-Regular">
-      <h2 className="review-title Neu-Bold ">
-        What Our <br /> Students Say?
-      </h2>
+      <div
+        ref={ref1}
+        className={`stats-title Neu-Bold" Neu-Bold ${View1 ? "ups" : ""}`}
+      >
+        <img className="title-img" src="Union.png" alt="" />
+        <div>
+          <p>What our</p>
+          <p>Students Say ?</p>
+        </div>
+      </div>
 
       <div className="review-grid">
         {reviewsData.map((item, index) => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Gallery.css";
 
-const categories = ["All", "Sports", "College", "Eco", "Programs"];
+const categories = ["All", "Sports", "College", "Programs"];
 
 const Gallery = ({ images = [], columns = 4 }) => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -11,14 +11,14 @@ const Gallery = ({ images = [], columns = 4 }) => {
       ? images
       : images.filter((img) => img.category === activeCategory);
 
-  const placeholderCount = columns * 4;
+  const placeholderCount = columns * 2;
 
   return (
     <section className="gallery-wrapper QuickSand-Regular">
-      <div className="gallery-head Neu-Bold">
+      {/* <div className="gallery-head Neu-Bold">
         <h2>Gallery</h2>
         <button className="add-image-btn">+ </button>
-      </div>
+      </div> */}
       <div className="gallery-filters ">
         <div className="gallery-nav ">
           {categories.map((cat) => (

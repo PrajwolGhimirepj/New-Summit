@@ -54,6 +54,9 @@
 .underScore {
   border-bottom: 1px solid;
 }
+.menue {
+  display: none;
+}
 .nav-con {
   width: 100vw;
   height: 50px;
@@ -83,8 +86,9 @@
   display: flex;
   gap: 20px;
 }
-.menue {
-  display: none;
+.menue img {
+  height: 30px;
+  width: 30px;
 }
 .activeNav {
   scale: 1.1;
@@ -161,8 +165,7 @@
     height: 55px;
     padding-right: 30px;
     background-color: rgba(5, 77, 151, 1);
-
-    color: aliceblue;f
+    color: aliceblue;
     cursor: pointer;
     transition-duration: 0.5s;
   }
@@ -238,7 +241,7 @@
     height: 55px;
     padding-right: 30px;
     background-color: rgba(5, 77, 151, 1);
-  
+
     color: aliceblue;
     cursor: pointer;
     transition-duration: 0.5s;

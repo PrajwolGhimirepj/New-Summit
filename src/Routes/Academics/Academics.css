@@ -88,6 +88,14 @@ button {
 
   cursor: pointer;
 }
+.background-routes {
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: -99999;
+}
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .academics-con {

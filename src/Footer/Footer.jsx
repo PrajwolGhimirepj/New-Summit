@@ -15,7 +15,7 @@ const Footer = () => {
         <p>info.plus2@newsummit.edu.np</p>
         <p>www.plus2.newsummit.edu.np</p>
       </div>
-      <div className="Socials">
+      {/* <div className="Socials">
         <p>Socials</p>
         <div className="Social-icons">
           {" "}
@@ -29,15 +29,7 @@ const Footer = () => {
             <img src="./Social/Tiktok.svg" alt="" />
           </div>
         </div>
-      </div>
-      <div className="Socials">
-        <p>Important Links</p>
-        <div className="Social-icons">
-          <div className="Social-icon"></div>
-          <div className="Social-icon"></div>
-          <div className="Social-icon"></div>
-        </div>
-      </div>
+      </div> */}
     </footer>
   );
 };

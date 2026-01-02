@@ -37,7 +37,11 @@ const Stats = () => {
 
   return (
     <div className="stats-container QuickSand-Regular">
-      <div className="stats-title Neu-Bold">
+      <div
+        ref={ref3}
+        className={`stats-title Neu-Bold" Neu-Bold ${View3 ? "ups" : ""}`}
+      >
+        <img className="title-img" src="Union.png" alt="" />
         <div>
           <p>WHY</p>
           <p>NEW SUMMIT ?</p>
@@ -50,9 +54,6 @@ const Stats = () => {
         1:16 student–faculty ratio, and partnerships with 50+ industry leaders
         that boost learning opportunities and help sharpen students’ potential.”
       </div>
-      {/* <h3 className="stats-title Neu-Bold">
-        <p> WHY NEW SUMMIT</p>
-      </h3> */}
 
       <div className="icons">
         {statsData.map((item, index) => (
@@ -71,9 +72,6 @@ const Stats = () => {
           </div>
         ))}
       </div>
-      {/* 
-      <div className="top-left"></div>
-      <div className="top-left"></div> */}
 
       <div>
         <img

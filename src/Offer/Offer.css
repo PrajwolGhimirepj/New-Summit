@@ -23,6 +23,7 @@
 /* Main Content */
 .offer-content {
   display: flex;
+
   gap: 40px;
 }
 

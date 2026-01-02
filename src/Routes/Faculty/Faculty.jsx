@@ -30,18 +30,6 @@ const Faculty = () => {
       degree: "Qulification",
       employment: "Full-Time",
     },
-    {
-      id: 5,
-      name: "Full Name",
-      degree: "Qulification",
-      employment: "Full-Time",
-    },
-    {
-      id: 6,
-      name: "Full Name",
-      degree: "Qulification",
-      employment: "Full-Time",
-    },
   ];
 
   return (

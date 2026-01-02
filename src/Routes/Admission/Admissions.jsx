@@ -55,6 +55,7 @@ const Admissions = ({ selectedProgram }) => {
           <img src={image} alt="" />
         </div>
       </div>
+      <img className="bgImg-summmit-admission" src="Group 21.png" alt="" />
     </div>
   );
 };
