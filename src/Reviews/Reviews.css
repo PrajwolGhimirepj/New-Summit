@@ -1,36 +1,200 @@
 .review-container {
+  padding: 40px 24px;
   width: 100vw;
+  max-width: 1920px;
+  padding: 10px 90px 120px 90px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
 
+.review-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #000;
+  position: relative;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 20px;
-  display: flex;
-  height: max-content;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 40px;
+
+  z-index: 999;
 }
 
-.reviews {
-  width: 80%;
-  display: flex;
-  gap: 10px;
-  justify-content: space-around;
+.review-card {
+  text-align: center;
 }
-.name-rev {
-  font-size: 20px;
+.review-card img {
+  width: 100%;
 }
-.riv {
-  height: max-content;
-  padding: 30px;
-  width: 500px;
-  color: aliceblue;
-  background-color: rgba(135, 18, 5, 1);
+
+.review-image {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #d3d3d3;
+  border-radius: 8px;
+  margin-bottom: 12px;
 }
-.rev-dec {
+
+.review-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+  color: #000;
+}
+
+.review-degree {
   font-size: 12px;
+  margin: 0 0 2px 0;
+  color: #666;
 }
 
-.review-actions {
-  width: 80%;
+.review-employment {
+  font-size: 12px;
+  margin: 0;
+  color: #666;
+}
+
+.explore-section {
+  margin-bottom: 20px;
+}
+
+.explore-text {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #000;
+  margin: 0;
+}
+
+.button-group {
   display: flex;
-  justify-content: end;
-  gap: 10px;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.nav-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:active {
+  background-color: #003d7a;
+}
+.deco-right {
+  position: absolute;
+  right: 0px;
+  top: 10%;
+  z-index: -1;
+  height: 70%;
+  width: 100%;
+}
+.right-img {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+}
+.left-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: scaleX(-1);
+  height: 100%;
+}
+
+@media (max-width: 864px) {
+  .review-container {
+    padding: 40px 24px;
+    width: 100vw;
+    max-width: 1920px;
+    padding: 10px 50px 0px 50px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .deco-right {
+    position: absolute;
+    right: 0px;
+    top: 30%;
+    z-index: -1;
+    height: 40%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .deco-right {
+    position: absolute;
+    right: 0px;
+    top: 40%;
+    z-index: -1;
+    height: 30%;
+    width: 100%;
+  }
+}
+@media (max-width: 573px) {
+  .review-container {
+    padding: 10px 10px 0px 10px;
+  }
+
+  .review-title {
+    font-size: 24px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+  .deco-right {
+    position: absolute;
+    right: 0px;
+    top: 40%;
+    z-index: -1;
+    height: 30%;
+    width: 100%;
+  }
+
+  .nav-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-container {
+    padding: 10px 10px 0px 10px;
+  }
+
+  .review-title {
+    font-size: 24px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+  .deco-right {
+    position: absolute;
+    right: 0px;
+    top: 40%;
+    z-index: -1;
+    height: 30%;
+    width: 100%;
+  }
+
+  .nav-button {
+    width: 100%;
+  }
 }

@@ -1,28 +1,36 @@
 .intro {
-  height: 100vh;
+  height: max-content;
   width: 100vw;
-  background-color: rgb(255, 255, 255);
-  transform: translateY(-10px);
   border-radius: 10px;
-  overflow: hidden;
-  padding: 150px 60px 0px 60px;
+  max-width: 1920px;
+  z-index: 9999000;
+  padding: 50px 90px 0px 90px;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
+  position: relative;
+  transform: translateY(-0px);
 }
 .intro-content {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 20px;
-  max-width: 600px;
+  max-width: 800px;
+  padding-right: 20px;
+}
+.intro-content p {
+  font-size: 17px;
 }
 .head {
   display: flex;
   gap: 20px;
   align-items: end;
   font-size: 50px;
-
   opacity: 0;
+}
+.head p {
+  font-size: 50px;
 }
 
 .head img {
@@ -30,23 +38,190 @@
 }
 
 .intro-image {
-  background-color: rgb(104, 104, 109);
-  border-radius: 10px;
-  overflow: hidden;
+  height: max-content;
 }
-
+.intro-image img {
+  object-fit: contain;
+}
 .intro-buttons {
   display: flex;
   gap: 10px;
   opacity: 0;
 }
-.fade-img {
+
+.overflowfix-test {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: -3;
-  opacity: 0.3;
+  right: 50px;
+  top: -450px;
 }
-.p {
-  opacity: 0;
+.active-btn {
+  background-color: rgba(135, 18, 5, 1);
+}
+.porgrams-small-con {
+  color: aliceblue;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  border-top-left-radius: 10px;
+  position: absolute;
+  right: 0px;
+  top: -80px;
+  background-color: rgba(5, 77, 151, 1);
+  padding: 10px 20px 10px 20px;
+}
+.programs-small {
+  display: flex;
+  gap: 10px;
+}
+.programs-dot {
+  background-color: rgb(151, 5, 5);
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.goal-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.goal-item p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 1155px) {
+  .intro {
+    height: max-content;
+    width: 100vw;
+    transform: translateY(-10px);
+    border-radius: 10px;
+
+    gap: 50px;
+    flex-direction: column;
+    padding: 30px 50px 0px 50px;
+    display: flex;
+
+    justify-content: space-between;
+  }
+  .intro-image {
+    overflow: hidden;
+    height: max-content;
+  }
+  .intro-image img {
+    height: 500px;
+
+    object-fit: contain;
+  }
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1165px) {
+  .overflowfix-test {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 70px;
+    top: -390px;
+  }
+}
+@media (max-width: 913px) {
+  .intro-image {
+    height: 300px;
+  }
+  .overflowfix-test {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 70px;
+    top: -300px;
+  }
+}
+@media (max-width: 948px) {
+  .overflowfix-test {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 70px;
+    top: -300px;
+  }
+}
+
+@media (max-width: 596px) {
+  .intro-image {
+    height: 300px;
+  }
+  .intro-image img {
+    object-fit: cover;
+  }
+  .head img {
+    height: 80px;
+  }
+  .head p {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    font-size: 30px;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 573px) {
+  .intro {
+    padding: 20px 20px 0px 20px;
+  }
+  .intro-image {
+    overflow: hidden;
+    height: 400px;
+  }
+  .intro-image img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 790px) {
+  .overflowfix-test {
+    display: none;
+  }
+  .porgrams-small-con {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 376px) {
+  .intro-image {
+    height: 200px;
+  }
+  .intro-image img {
+    object-fit: cover;
+  }
+  .head img {
+    height: 60px;
+  }
+  .head p {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    font-size: 25px;
+    opacity: 1;
+  }
 }

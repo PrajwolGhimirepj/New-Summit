@@ -2,41 +2,31 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  scrollbar-width: none;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: Pally-Medium;
-  src: url(Pally-Medium.otf);
-}
-@font-face {
-  font-family: Pally-Regular;
-  src: url(Pally-Regular.otf);
-}
-@font-face {
-  font-family: Expose-Medium;
-  src: url(Expose-Medium.otf);
-}
-@font-face {
-  font-family: NewTitle;
-  src: url(NewTitle-Bold.otf);
-}
-.font-NewTitle {
-  font-family: NewTitle;
-}
-.font-Expose {
-  font-family: Expose-Medium;
-}
-.small-font {
-  font-size: 7px;
-  font-weight: 200;
-  font-family: Pally-Regular;
+.Neu-Bold {
+  font-family: "Bebas Neue", sans-serif;
 }
 
-.font {
-  font-family: Pally-Medium;
+.QuickSand-Regular {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
 }
-
+.QuickSand-Bold {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+}
+body {
+  overflow-x: hidden;
+}
 .app {
+  width: 100vw;
   max-width: 1920px;
   position: relative;
   display: flex;
@@ -54,4 +44,13 @@
   right: 0;
   z-index: 1000;
   width: 100%;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  color: rgb(0, 0, 0);
 }

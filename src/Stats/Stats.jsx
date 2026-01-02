@@ -1,5 +1,6 @@
 import "./Stats.css";
 import useObserve from "../Observer";
+import GalleryDis from "../Exprimental/GalleryDis.jsx";
 
 const statsData = [
   {
@@ -29,15 +30,39 @@ const statsData = [
 ];
 
 const Stats = () => {
-  const [ref, View] = useObserve({ threshold: 0.5 });
+  const [ref, View] = useObserve({ threshold: 0.4 });
   const [ref1, View1] = useObserve({ threshold: 0.5 });
+  const [ref2, View2] = useObserve({ threshold: 0.5 });
+  const [ref3, View3] = useObserve({ threshold: 0.5 });
+
   return (
-    <div className="stats-container font">
-      <h3 className="stats-title">WHY NEW SUMMIT ?</h3>
+    <div className="stats-container QuickSand-Regular">
+      <div
+        ref={ref3}
+        className={`stats-title Neu-Bold" Neu-Bold ${View3 ? "ups" : ""}`}
+      >
+        <img className="title-img" src="Union.png" alt="" />
+        <div>
+          <p>WHY</p>
+          <p>NEW SUMMIT ?</p>
+        </div>
+        <GalleryDis />
+      </div>
+      <div className="stats-intro">
+        New Summit provides excellent student services, including
+        state-of-the-art laboratories, four in-demand bachelor’s programs, a
+        1:16 student–faculty ratio, and partnerships with 50+ industry leaders
+        that boost learning opportunities and help sharpen students’ potential.”
+      </div>
 
       <div className="icons">
         {statsData.map((item, index) => (
-          <div className="icon-dec" key={index}>
+          <div
+            key={index}
+            ref={ref2}
+            style={{ animationDelay: `${index * 150}ms` }}
+            className={` icon ${View2 ? "up" : "out"}`}
+          >
             <img src={item.img} alt={item.line1} />
             <div className="dec">
               <p className="stat-value">{item.value}</p>
@@ -47,6 +72,7 @@ const Stats = () => {
           </div>
         ))}
       </div>
+
       <div>
         <img
           ref={ref}

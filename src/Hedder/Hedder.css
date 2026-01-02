@@ -15,9 +15,6 @@
 .name-logo img {
   height: 90px;
 }
-.name {
-  font-size: 22px;
-}
 
 .apply-contacts {
   font-size: 16px;
@@ -25,6 +22,11 @@
   display: flex;
   align-items: center;
 }
+.contacts {
+  display: flex;
+  gap: 30px;
+}
+
 .apply-contacts p {
   cursor: pointer;
 }
@@ -36,9 +38,9 @@
   padding-left: 40px;
   height: 55px;
   padding-right: 40px;
-  background-color: rgba(135, 18, 5, 1);
-  border-radius: 5px;
   color: aliceblue;
+  background-color: rgba(135, 18, 5, 1);
+
   cursor: pointer;
   transition-duration: 0.5s;
 }
@@ -52,6 +54,9 @@
 .underScore {
   border-bottom: 1px solid;
 }
+.menue {
+  display: none;
+}
 .nav-con {
   width: 100vw;
   height: 50px;
@@ -64,10 +69,294 @@
 }
 .nav-con a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+
   font-size: 18px;
 }
 .left-nav {
   display: flex;
   gap: 20px;
+}
+.left-nav a {
+  cursor: pointer;
+}
+.left-navv a {
+  cursor: pointer;
+}
+.left-navv {
+  display: flex;
+  gap: 20px;
+}
+.menue img {
+  height: 30px;
+  width: 30px;
+}
+.activeNav {
+  scale: 1.1;
+  color: aliceblue;
+}
+.notActiveNav {
+  scale: 1;
+  color: rgb(255, 255, 255);
+}
+.notActiveNav,
+.activeNav {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 6px;
+}
+
+/* underline */
+.notActiveNav::after,
+.activeNav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(135, 18, 5, 1);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+/* active state */
+.activeNav::after {
+  transform: scaleX(1);
+}
+
+/* hover preview */
+.notActiveNav:hover::after {
+  transform: scaleX(1);
+}
+@media (max-width: 820px) {
+  .hedder-con {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    max-width: 1920px;
+    align-self: center;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+  }
+
+  .name-logo {
+    display: flex;
+  }
+  .name-logo img {
+    height: 70px;
+  }
+
+  .apply-contacts {
+    font-size: 14px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .apply-contacts p {
+    cursor: pointer;
+  }
+  .apply {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    height: 55px;
+    padding-right: 30px;
+    background-color: rgba(5, 77, 151, 1);
+    color: aliceblue;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  .apply:hover {
+    scale: 1.1;
+    background-color: rgba(5, 77, 151, 1);
+  }
+  .apply:hover .underScore {
+    border-bottom: 1px rgba(135, 18, 5, 1) solid;
+  }
+  .underScore {
+    border-bottom: 1px solid;
+  }
+  .nav-con {
+    width: 100vw;
+    height: 50px;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 20px 50px;
+    background-color: rgba(5, 77, 151, 1);
+  }
+  .nav-con a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .left-nav {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 631px) {
+  .hedder-con {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    max-width: 1920px;
+    align-self: center;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+  }
+
+  .name-logo {
+    display: flex;
+  }
+  .name-logo img {
+    height: 70px;
+  }
+
+  .apply-contacts {
+    font-size: 14px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .apply-contacts p {
+    cursor: pointer;
+  }
+  .apply {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    height: 55px;
+    padding-right: 30px;
+    background-color: rgba(5, 77, 151, 1);
+
+    color: aliceblue;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  .apply:hover {
+    scale: 1.1;
+    background-color: rgba(5, 77, 151, 1);
+  }
+  .apply:hover .underScore {
+    border-bottom: 1px rgba(135, 18, 5, 1) solid;
+  }
+  .underScore {
+    border-bottom: 1px solid;
+  }
+  .nav-con {
+    width: 100vw;
+    height: 50px;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 20px 50px;
+    background-color: rgba(5, 77, 151, 1);
+  }
+  .nav-con a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+  }
+  .left-nav {
+    display: flex;
+    gap: 20px;
+  }
+}
+@media (max-width: 572px) {
+  .hedder-con {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    max-width: 1920px;
+    align-self: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .name-logo {
+    display: flex;
+  }
+  .name-logo img {
+    height: 50px;
+  }
+
+  .apply-contacts {
+    font-size: 14px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .contacts {
+    display: none;
+  }
+
+  .apply-contacts p {
+    cursor: pointer;
+  }
+  .apply {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    height: 40px;
+    padding-right: 20px;
+    background-color: rgba(5, 77, 151, 1);
+
+    color: aliceblue;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  .apply:hover {
+    scale: 1.1;
+    background-color: rgba(5, 77, 151, 1);
+  }
+  .apply:hover .underScore {
+    border-bottom: 1px rgba(135, 18, 5, 1) solid;
+  }
+  .underScore {
+    border-bottom: 1px solid;
+  }
+  .nav-con {
+    width: 100vw;
+    height: 50px;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    background-color: rgba(5, 77, 151, 1);
+  }
+  .nav-con a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+  }
+  .left-nav {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 744px) {
+  .left-navv {
+    display: none;
+  }
+  .menue {
+    display: block;
+  }
 }

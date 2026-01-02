@@ -1,0 +1,126 @@
+.academics-con {
+  max-width: 1920px;
+  margin: auto;
+
+  padding: 200px 60px 0px 60px;
+}
+button {
+  text-decoration: none;
+  border: none;
+}
+/* NAV */
+.academics-nav {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+
+.nav-btn.active {
+  background-color: rgba(5, 77, 151, 1);
+}
+
+/* DETAILS */
+.academics-details {
+  display: flex;
+  gap: 20px;
+
+  margin-top: 15px;
+}
+
+.details-right {
+  padding: 15px;
+  border-left: 1px solid black;
+}
+
+.details-left {
+  flex: 2;
+}
+
+.details-right {
+  flex: 1;
+}
+
+.description {
+  margin-bottom: 15px;
+}
+
+/* LISTS */
+.details-left ul {
+  padding-left: 16px;
+}
+
+.details-left li {
+  margin-bottom: 6px;
+}
+
+/* ACTIONS */
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.fee-box {
+  background: #e5e5e5;
+  padding: 30px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.scholarship {
+  font-size: 14px;
+}
+
+.active {
+  scale: 1.1;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(135, 18, 5, 1);
+  color: aliceblue;
+
+  cursor: pointer;
+}
+
+.notactive {
+  scale: 1;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(5, 77, 151, 1);
+  color: aliceblue;
+
+  cursor: pointer;
+}
+.background-routes {
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: -99999;
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .academics-con {
+    max-width: 1920px;
+    margin: auto;
+    background: #fff;
+    padding: 180px 50px 0px 50px;
+  }
+  .academics-details {
+    flex-direction: column;
+  }
+  .details-right {
+    padding: 15px;
+    border-left: 0px solid black;
+  }
+}
+
+@media (max-width: 573px) {
+  .academics-con {
+    max-width: 1920px;
+    margin: auto;
+    background: #fff;
+    padding: 130px 10px 0px 10px;
+  }
+  .academics-details {
+    flex-direction: column;
+  }
+}

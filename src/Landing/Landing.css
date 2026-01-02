@@ -1,21 +1,26 @@
 .landing {
   height: 700px;
-  max-width: 1920px;
   display: flex;
+  align-items: end;
   position: relative;
-  max-width: 1920px;
-  width: 100vw;
+  padding-left: 70px;
+  padding-right: 70px;
+
+  overflow: hidden;
 }
 
 .lading-img {
   height: 100%;
+  width: 100%;
   display: flex;
+  justify-content: start;
   align-items: end;
-  transform: translateX(-90px);
+  z-index: 9;
 }
 
 .lading-img img {
   height: 75%;
+  width: 100%;
   object-fit: contain;
 }
 
@@ -25,32 +30,73 @@
   align-items: start;
   justify-content: center;
   height: 100%;
-  font-size: 70px;
-  transform: translateX(-130px) translateY(40px);
-}
-
-.programs {
   width: 500px;
+  font-size: 60px;
+  transform: translateX(-10px) translateY(80px);
+}
+.program-title {
+  font-size: 20px;
+  font-weight: 900;
+}
+.programs {
+  width: 1000px;
   height: 100%;
+  min-width: 120px;
   display: flex;
   flex-direction: column;
   justify-content: end;
   gap: 10px;
   z-index: 20;
-  transform: translateY(120px);
+  margin-bottom: 30px;
+  transform: translateY(90px);
 }
-
-.program-box {
+.absuluteCon {
   width: 100%;
-  height: 120px;
+  height: 4700px;
+  background-color: rgb(127, 31, 14);
+  position: fixed;
+  top: 50%;
+}
+.program-box {
+  max-width: 400px;
+  min-width: 100px;
+  height: 110px;
+  height: 150px;
   background-color: rgba(5, 77, 151, 1);
-  border-radius: 10px;
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+.program-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title {
+  border-bottom: 1px solid;
+  font-size: 16px;
+  width: max-content;
+  font-weight: 600;
+}
+.decc {
+  font-size: 14px;
+  line-height: 1.5;
+  /* Ellipsis configuration */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .background {
   width: 100vw;
   height: 100vh;
-  max-width: 19;
+
   overflow: hidden;
   position: absolute;
   top: 0px;
@@ -72,8 +118,134 @@
   position: absolute;
   width: 700px;
   height: 100%;
-
-  right: 0px;
+  right: -50px;
   bottom: 0px;
   pointer-events: none;
+}
+
+@media (max-width: 1167px) {
+  .landing {
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    align-items: end;
+    position: relative;
+  }
+  .monolauge {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    width: 200px;
+    font-size: 40px;
+    transform: translateX(-30px) translateY(80px);
+  }
+  .programs {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    z-index: 20;
+    margin-bottom: 30px;
+  }
+
+  .program-box {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(5, 77, 151, 1);
+  }
+}
+
+@media (max-width: 959px) {
+  .landing {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    align-items: end;
+    position: relative;
+  }
+  .monolauge {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    width: 200px;
+    font-size: 30px;
+    transform: translateX(-60px) translateY(80px);
+  }
+  .programs {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    z-index: 20;
+    margin-bottom: 30px;
+  }
+
+  .program-box {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(5, 77, 151, 1);
+  }
+}
+
+@media (max-width: 780px) {
+  .landing {
+    height: max-content;
+    padding-top: 150px;
+    width: 100vw;
+    display: flex;
+    align-items: end;
+    position: relative;
+  }
+  .lading-img {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    z-index: 9;
+    transform: translateX(10px);
+  }
+  .lading-img img {
+    height: 100%;
+    width: 100%;
+    scale: 1.2;
+    object-fit: contain;
+  }
+  .monolauge {
+    display: none;
+  }
+  .programs {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .box {
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    right: -120px;
+    bottom: 0px;
+    pointer-events: none;
+  }
+  .lading-img {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    z-index: 9;
+    transform: translateX(5px);
+  }
+  .lading-img img {
+    height: 100%;
+    width: 100%;
+    scale: 1.3;
+    object-fit: contain;
+  }
 }
