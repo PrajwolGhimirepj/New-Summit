@@ -8,9 +8,11 @@ const Review = () => {
     {
       firstName: "Dikshya",
       lastName: "Sigdel",
+
       review:
         "The BCA program at New Summit College helped me build a strong foundation in programming and problem-solving. The faculty members are supportive and always encourage practical learning.",
     },
+
     {
       firstName: "Prajwol",
       lastName: "Ghimire",

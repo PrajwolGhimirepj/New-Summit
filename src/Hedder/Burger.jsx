@@ -31,10 +31,10 @@ const Burger = ({ isActive, handleRouteChange }) => {
         </a>
 
         <a
-          className={isActive("/faq") ? "activeNav" : "notActiveNav"}
-          onClick={() => go("FAQ")}
+          className={isActive("/faculty") ? "activeNav" : "notActiveNav"}
+          onClick={() => handleRouteChange("Faculty")}
         >
-          FAQ
+          Faculty
         </a>
       </div>
     </div>

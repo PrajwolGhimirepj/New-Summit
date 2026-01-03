@@ -30,6 +30,9 @@
 }
 .review-card img {
   width: 100%;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
 }
 
 .review-image {

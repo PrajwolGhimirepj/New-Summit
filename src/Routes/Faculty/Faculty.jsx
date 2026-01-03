@@ -1,9 +1,10 @@
 import React from "react";
 import "./Faculty.css";
 import "../../App/App.css";
+import useObserve from "../../Observer";
 
-import Explore from "../../Explore-more/Explore.jsx";
 const Faculty = () => {
+  const [ref2, View2] = useObserve({ threshold: 0.1 });
   const facultyMembers = [
     {
       id: 1,
@@ -34,8 +35,19 @@ const Faculty = () => {
 
   return (
     <div className="faculty-container QuickSand-Regular">
-      <h2 className="faculty-title Neu-Bold ">Our Faculty</h2>
-
+      <h2 className={`faculty-title Neu-Bold" Neu-Bold ${View2 ? "ups" : ""}`}>
+        Our Faculty
+      </h2>
+      {/* <div
+        ref={ref2}
+        className={`stats-title Neu-Bold" Neu-Bold ${View2 ? "ups" : ""}`}
+      >
+        <img className="title-img" src="Union.png" alt="" />
+        <div>
+          <p>What WE</p>
+          <p>Offer?</p>
+        </div>
+      </div> */}
       <div className="faculty-grid">
         {facultyMembers.map((member) => (
           <div key={member.id} className="faculty-card">

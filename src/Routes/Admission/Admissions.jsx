@@ -7,7 +7,6 @@ const Admissions = ({ selectedProgram }) => {
       <div className="admission-modal">
         <span className="close-btn">×</span>
 
-        {/* LEFT */}
         <div className="admission-left Neu-Bold">
           <h2>
             APPLY FOR <br />
@@ -42,7 +41,6 @@ const Admissions = ({ selectedProgram }) => {
             type="text"
             placeholder="Program you want to enroll in :"
             value={selectedProgram}
-            readOnly
           />
 
           <textarea className="QuickSand-Regular" placeholder="Any queries ?" />

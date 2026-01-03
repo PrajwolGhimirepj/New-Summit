@@ -29,9 +29,10 @@ const Navigation = () => {
       case "Notices":
         navigate("/notices");
         break;
-      case "FAQ":
-        navigate("/faq");
+      case "Gallery":
+        navigate("/gallery");
         break;
+
       default:
         navigate("/");
     }
@@ -60,13 +61,6 @@ const Navigation = () => {
         >
           Admissions
         </a>
-
-        <a
-          className={isActive("/faculty") ? "activeNav" : "notActiveNav"}
-          onClick={() => handleRouteChange("Faculty")}
-        >
-          Faculty
-        </a>
       </div>
 
       <div className="left-navv small">
@@ -83,12 +77,17 @@ const Navigation = () => {
         >
           Notices
         </a>
-
         <a
-          className={isActive("/faq") ? "activeNav" : "notActiveNav"}
-          onClick={() => handleRouteChange("FAQ")}
+          className={isActive("/faculty") ? "activeNav" : "notActiveNav"}
+          onClick={() => handleRouteChange("Faculty")}
         >
-          FAQ
+          Faculty
+        </a>
+        <a
+          className={isActive("/gallery") ? "activeNav" : "notActiveNav"}
+          onClick={() => handleRouteChange("Gallery")}
+        >
+          Gallery
         </a>
       </div>
 

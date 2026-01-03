@@ -146,7 +146,7 @@ const Academics = () => {
             >
               Apply
             </button>
-            <button className="apply QuickSand-Bold">Contacts</button>
+            {/* <button className="apply QuickSand-Bold">Contacts</button> */}
           </div>
         </div>
 
