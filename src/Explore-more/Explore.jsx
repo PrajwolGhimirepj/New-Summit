@@ -31,6 +31,14 @@ const Explore = () => {
           </a>
         ))}
       </div>
+      Repo :
+      <a
+        target="_blank"
+        rel="noreferrer  noopener"
+        href="https://github.com/PrajwolGhimirepj/New-Summit"
+      >
+        https://github.com/PrajwolGhimirepj/New-Summit
+      </a>
     </div>
   );
 };

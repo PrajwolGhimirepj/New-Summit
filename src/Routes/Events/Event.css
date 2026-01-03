@@ -27,7 +27,6 @@
   width: 100%;
   height: 290px;
   background: #e0e0e0;
-  border-radius: 12px;
 }
 
 /* CONTENT */
@@ -74,7 +73,6 @@
     width: 100%;
     height: 200px;
     background: #e0e0e0;
-    border-radius: 12px;
   }
 }
 @media (max-width: 573px) {
